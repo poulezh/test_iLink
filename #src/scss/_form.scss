@@ -4,7 +4,10 @@
     margin: 0 auto;
     background-color: #F8F3FF;
     margin-bottom: 40px;
-    &__title{
+    position: relative;
+    overflow: hidden;
+    &__title {
+        position: relative;
         font-style: normal;
         font-weight: 800;
         font-size: 40px;
@@ -12,14 +15,17 @@
         padding-bottom: 42px;
         padding-top: 54px;
         padding-left: 64px;
+        z-index: 999;
     }
     &__block{
         display: flex;
+        
     }
     &__item:first-child{
         display: flex;
         flex-direction: column;
         // padding-right: 32px;
+        
 
         padding-left: 64px;
     }
@@ -28,6 +34,7 @@
         flex-direction: column;
         padding-left: 32px;
         padding-bottom: 42px;
+        z-index: 1;
   
     }
     &__input{
@@ -39,6 +46,7 @@
         font-size: 16px;
         padding-left: 12px;
         border-radius: 12px;
+        z-index: 1;
     }
     & label{
         font-style: normal;
@@ -47,6 +55,7 @@
         line-height: 19px;
         align-items: center;
         padding-bottom: 6px;
+        z-index: 1;
     }
     &__input::placeholder{
         font-style: normal;
@@ -70,6 +79,8 @@
         margin-left: 64px;
         margin-bottom: 112px;
         margin-top: 15px;
+        position: relative;
+        z-index: 1;
     }
     &__text{
         // font-family: 'Gilroy' sans-serif;
@@ -106,6 +117,8 @@
         text-align: center;
         align-items: center;
         margin-bottom: 64px;
+        position: relative;
+        z-index: 1;
     }
 
 }
