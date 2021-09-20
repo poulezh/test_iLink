@@ -3,22 +3,32 @@
     width: 100%;
     margin: 0 auto;
     background-color: #F8F3FF;
+    margin-bottom: 40px;
     &__title{
         font-style: normal;
         font-weight: 800;
         font-size: 40px;
         line-height: 72px;
-        padding-bottom: 67px;
+        padding-bottom: 42px;
+        padding-top: 54px;
+        padding-left: 64px;
     }
     &__block{
         display: flex;
     }
+    &__item:first-child{
+        display: flex;
+        flex-direction: column;
+        // padding-right: 32px;
+
+        padding-left: 64px;
+    }
     &__item{
         display: flex;
         flex-direction: column;
-        padding-right: 32px;
-        padding-bottom: 67px;
-        padding-left: 64px;
+        padding-left: 32px;
+        padding-bottom: 42px;
+  
     }
     &__input{
         width: 304px;
@@ -36,42 +46,56 @@
         font-size: 14px;
         line-height: 19px;
         align-items: center;
+        padding-bottom: 6px;
     }
     &__input::placeholder{
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
-        padding-left: 16px;
+        padding-left: 4px;
     }
     &__doc{
         display: flex;
+        justify-content: center;
         align-items: center;
         text-align: center;
-        width: 976px;
+        max-width: 976px;
+        width: 100%;
         height: 104px;
         background: #FFFFFF;
         border: 1px dashed #D9BBFF;
         box-sizing: border-box;
         border-radius: 12px;
         margin-left: 64px;
-        margin-bottom: 64px;
+        margin-bottom: 112px;
+        margin-top: 15px;
     }
     &__text{
-        font-family: Gilroy;
+        // font-family: 'Gilroy' sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 15px;
+        line-height: 20px;
         display: flex;
         align-items: center;
-        letter-spacing: 0.03em;
+        text-align: center;
+        letter-spacing: 0;
         color: #9993BD;
+        // margin: 0 8px;
+        padding: 0 8px;
     }
     &__add{
         background: #FFFFFF;
         border: 1px solid #8E43ED;
         color: #8E43ED;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        // margin: 0 25px;
+
     }
 
     &__btn{

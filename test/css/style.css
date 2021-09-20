@@ -272,7 +272,7 @@ h6 {
   background-color: #fff;
   border-radius: 245px 0 245px 0;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .card__inner {
@@ -285,8 +285,6 @@ h6 {
 
 .card__photo {
   margin-left: 64px;
-  width: 528px;
-  height: 600px;
 }
 
 .card__block {
@@ -350,6 +348,7 @@ h6 {
   width: 100%;
   margin: 0 auto;
   background-color: #F8F3FF;
+  margin-bottom: 40px;
 }
 
 .form__title {
@@ -357,13 +356,26 @@ h6 {
   font-weight: 800;
   font-size: 40px;
   line-height: 72px;
-  padding-bottom: 67px;
+  padding-bottom: 42px;
+  padding-top: 54px;
+  padding-left: 64px;
 }
 
 .form__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.form__item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 64px;
 }
 
 .form__item {
@@ -374,9 +386,8 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 32px;
-  padding-bottom: 67px;
-  padding-left: 64px;
+  padding-left: 32px;
+  padding-bottom: 42px;
 }
 
 .form__input {
@@ -399,6 +410,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 6px;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -406,7 +418,7 @@ h6 {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 16px;
+  padding-left: 4px;
 }
 
 .form__input::-moz-placeholder {
@@ -414,7 +426,7 @@ h6 {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 16px;
+  padding-left: 4px;
 }
 
 .form__input:-ms-input-placeholder {
@@ -422,7 +434,7 @@ h6 {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 16px;
+  padding-left: 4px;
 }
 
 .form__input::-ms-input-placeholder {
@@ -430,7 +442,7 @@ h6 {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 16px;
+  padding-left: 4px;
 }
 
 .form__input::placeholder {
@@ -438,18 +450,22 @@ h6 {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 16px;
+  padding-left: 4px;
 }
 
 .form__doc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 976px;
+  max-width: 976px;
+  width: 100%;
   height: 104px;
   background: #FFFFFF;
   border: 1px dashed #D9BBFF;
@@ -457,29 +473,36 @@ h6 {
           box-sizing: border-box;
   border-radius: 12px;
   margin-left: 64px;
-  margin-bottom: 64px;
+  margin-bottom: 112px;
+  margin-top: 15px;
 }
 
 .form__text {
-  font-family: Gilroy;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.03em;
+  text-align: center;
+  letter-spacing: 0;
   color: #9993BD;
+  padding: 0 8px;
 }
 
 .form__add {
   background: #FFFFFF;
   border: 1px solid #8E43ED;
   color: #8E43ED;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .form__btn {
@@ -492,4 +515,10 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 64px;
+}
+
+.slider {
+  max-width: 1440;
+  width: 100%;
+  margin: 0 auto;
 }
