@@ -215,6 +215,13 @@ h6 {
 .card {
   max-width: 1440px;
   width: 100%;
+  background-color: #F8F3FF;
+  margin: 0 auto;
+}
+
+.card__wrapper {
+  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 245px 0 245px 0;
