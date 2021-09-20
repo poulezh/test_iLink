@@ -1,0 +1,87 @@
+.form{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F8F3FF;
+    &__title{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 72px;
+        padding-bottom: 67px;
+    }
+    &__block{
+        display: flex;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        padding-right: 32px;
+        padding-bottom: 67px;
+        padding-left: 64px;
+    }
+    &__input{
+        width: 304px;
+        height: 56px;
+        background: #FFFFFF;
+        border: 1px solid #8E43ED;
+        box-sizing: border-box;
+        font-size: 16px;
+        padding-left: 12px;
+        border-radius: 12px;
+    }
+    & label{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        align-items: center;
+    }
+    &__input::placeholder{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 16px;
+    }
+    &__doc{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 976px;
+        height: 104px;
+        background: #FFFFFF;
+        border: 1px dashed #D9BBFF;
+        box-sizing: border-box;
+        border-radius: 12px;
+        margin-left: 64px;
+        margin-bottom: 64px;
+    }
+    &__text{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #9993BD;
+    }
+    &__add{
+        background: #FFFFFF;
+        border: 1px solid #8E43ED;
+        color: #8E43ED;
+    }
+
+    &__btn{
+        background: #DED9E4;
+        border-radius: 12px;
+        margin-left: 64px;
+        color: #FFFFFF;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+}

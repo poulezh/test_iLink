@@ -32,7 +32,13 @@
     <div class="card__wrapper">
         <div class="container">
             <div class="card__inner">
-                <img src="./img/photo_user.png" alt="" class="card__photo">
+                <div class="card__img">
+                    <img src="./img/photo_user.png" alt="" class="card__photo">
+                    <div class="card__pos">
+                        <span class="restangle res_1"></span>
+                        <span class="restangle res_2"></span>
+                    </div>
+                </div>
                 <div class="card__block">
                     <h1 class="card__name">Jane Doe</h1>
                     <div class="card__info">
@@ -61,8 +67,60 @@
         </div>
     </div>
 </div>
+<form action="handler.py" name='form' class="form">
+    <span class="res_3"></span>
+    <span class="res_4"></span>
+    <span class="res_5"></span>
+    <span class="res_6"></span>
+    <span class="res_7"></span>
+    <span class="res_8"></span>
+    <h1 class="form__title">Tell us about yourself</h1>
+    <div class="form__block">
+        <div class="form__item">
+            <label for="name">Your name</label>
+            <input type="text" name="name" class="form__input" placeholder="Tell us your name">
+        </div>
+        <div class="form__item">
+            <label for="gender">Your gender</label>
+            <input type="text" name="gender" class="form__input" placeholder="Chose your gender">
+        </div>
 
-			
+
+    </div>
+    <div class="form__block">
+        <div class="form__item">
+            <label for="country">Your country</label>
+            <input type="text" name="country" class="form__input" placeholder="Chose your gender">
+
+        </div>
+        <div class="form__item">
+            <label for="city">Your city</label>
+            <input type="text" name="city" class="form__input" placeholder="Chose your gender">
+
+        </div>
+        <div class="form__item">
+            <label for="data">Your data of birth</label>
+            <input type="text" name="data" class="form__input" placeholder="Chose your gender">
+
+        </div>
+    </div>
+    <div class="form__doc">
+        <p class="form__text">Proof your identity with some documents</p>
+        <button class="form__add btn">Add document</button>
+    </div>
+    <button class="form__btn btn">Send info</button>
+</form>
+<div class="slider">
+    <div class="container">
+        <div class="slider__inner">
+            <img src="./img/background.png" alt="">
+            <img src="./img/background.png" alt="">
+            <img src="./img/background.png" alt="">
+            <img src="./img/background.png" alt="">
+            <img src="./img/background.png" alt="">
+        </div>
+    </div>
+</div>			
 
 					
 <footer class="footer">

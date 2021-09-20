@@ -12,6 +12,7 @@
         background-color: #fff;
         border-radius: 245px 0 245px 0;
         padding-top: 100px;
+        padding-bottom: 100px;
 
     }
     &__inner{
@@ -65,4 +66,8 @@
         font-size: 18px;
         line-height: 32px;
     }
+    &__img{
+        position: relative;
+    }
 }
+
