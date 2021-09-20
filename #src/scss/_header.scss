@@ -1,0 +1,101 @@
+.header {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    max-width: 1440px;
+    width: 100%;
+    background-color: #F8F3FF;
+    margin: 0 auto;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__logo {}
+    &__logo-block {
+        padding-left: 64px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+
+    }
+
+    &__link {
+        padding: 37px 16px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #8E43ED;
+        cursor: pointer;
+
+    }
+}
+
+.card {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 245px 0 245px 0;
+    padding-top: 100px;
+    &__inner{
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__photo {
+        margin-left: 64px;
+        width: 528px;
+        height: 600px;
+    }
+    &__block{
+        width: 100%;
+        padding: 44px 34px;
+    }
+    &__name{
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 72px;
+    }
+    &__info{
+        display: flex;
+        padding-top: 23px;
+    }
+    &__time{
+        display: flex;
+        padding-right: 30px;
+    }
+    &__item{
+        padding-left: 9px;
+    }
+    &__title{
+        color: #AA7ECD;
+        font-weight: bold ;
+        line-height: 21px;
+    }
+    &__subtitle{
+        margin-top: 64px;
+        margin-bottom: 26px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 27px;
+        line-height: 36px;
+    }
+    &__text{
+        margin-bottom: 18px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
