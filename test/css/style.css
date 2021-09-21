@@ -532,7 +532,103 @@ h6 {
 }
 
 .slider {
-  max-width: 1440;
+  max-width: 1312px;
   width: 100%;
   margin: 0 auto;
+}
+
+.slider__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 0;
+  position: relative;
+}
+
+.slider__item {
+  position: relative;
+  padding: 0 64px 0 0;
+}
+
+.slider__item div {
+  position: absolute;
+  top: 45%;
+  left: 47%;
+  z-index: 999;
+  font-size: 56px;
+  color: #fff;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.slider__point {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.slider__point:first-child {
+  left: 45%;
+  -webkit-transform: translate(-45%, -45%);
+      -ms-transform: translate(-45%, -45%);
+          transform: translate(-45%, -45%);
+}
+
+.slider__point:last-child {
+  left: 55%;
+  -webkit-transform: translate(-55%, -55%);
+      -ms-transform: translate(-55%, -55%);
+          transform: translate(-55%, -55%);
+}
+
+.slider__arrow {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.slider__left {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  top: 50%;
+  left: 3%;
+}
+
+.slider__right {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 50%;
+  right: 3%;
+}
+
+.active {
+  background-color: #fff;
+}
+
+.active:hover {
+  background-color: #fff;
 }
