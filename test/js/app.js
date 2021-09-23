@@ -6,9 +6,9 @@ function slider() {
   let width = document.querySelector('.slider').clientWidth
   console.log(width);
 
-  let index = 1
+  let index = 0
 
-  const list_slides = (n) => {
+  const list_slides = (n) => { debugger
     if (n > slides.length) {
         // если н больше трех индекс скидываем
       index = 1;
@@ -24,18 +24,16 @@ function slider() {
 
     for (let i = 0; i < slides.length; i++) {
 
-    //   slides[i].style.display = "none";
-      slides[i].style.left = -width - 64 + 'px';
+      slides[i].style.display = "none";
+      // slides[i].style.left = -width - 64 + 'px';
 
    
     }
     for (i = 0; i < point.length; i++) {
       point[i].classList.remove("active");
     }
-    // slides[index - 1].style.display = "block";
-    slides[index - 1].style.left = width + 70 + 'px';
-  
-
+    slides[index - 1].style.display = "block";
+    // slides[index - 1].style.left = width + 70 + 'px';
     point[index - 1].classList.add("active");
   };
 
