@@ -1,36 +1,49 @@
-
-.res_1{
-    width: 68px;
-    height: 68px;
-    border-radius: 16px;
-    background-color:#8E43ED;
+.res_1 {
+    background-color: #8E43ED;
     position: absolute;
-    left: 18px;
     bottom: 136px;
+
     transform: rotate(-22deg);
-    @media screen and (max-width: 1200px) {
-        transform: rotate(-22deg);
-        position: absolute;
-        width: 34px;
-        height: 34px;
+    @media screen and (max-width: 930px) {
+        width: 32px;
+        height: 32px;
         border-radius: 10px;
-        right: 10px;
-        bottom: 25px;
-        background-color:#8E43ED;
+        right: 5vw;
+        transform: rotate(22deg);
+        bottom: 56px;
+        
+    }
+    @media screen and (min-width: 930px) {
+        width: 68px;
+        height: 68px;
+        border-radius: 16px;
+        left: 18px;
+    }
+
+}
+
+.res_2 {
+    transform: rotate(-52deg);
+    background-color: #F18BC3;
+    position: absolute;
+    bottom: -10px;
+    // transform: translateX(-50%);
+    @media screen and (min-width: 930px) {
+        width: 120px;
+        height: 120px;
+        border-radius: 24px;
+        left: 26px; 
+        // transform: translateX(-50%);
+    }
+    @media screen and (max-width: 930px) {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        right: -15px;
     }
 }
-.res_2{
-    width: 120px;
-    height: 120px;
-    border-radius: 24px;
-    background-color:#F18BC3;
-    position: absolute;
-    left: 26px;
-    bottom: -10px;
-    transform: rotate(-52deg);
-    @media screen and (max-width: 1200px) {}
-}
-.res_3{
+
+.res_3 {
     position: absolute;
     bottom: 117px;
     right: -44px;
@@ -40,7 +53,8 @@
     border-radius: 32px;
     transform: rotate(30deg);
 }
-.res_4{
+
+.res_4 {
     width: 116.44px;
     height: 116.44px;
     position: absolute;
@@ -50,7 +64,8 @@
     border-radius: 16px;
     transform: rotate(47.56deg);
 }
-.res_5{
+
+.res_5 {
     width: 120px;
     height: 120px;
     position: absolute;
@@ -62,7 +77,8 @@
     border-radius: 32px;
     transform: rotate(15deg);
 }
-.res_6{
+
+.res_6 {
     position: absolute;
     width: 167.79px;
     height: 167.79px;
@@ -73,7 +89,8 @@
     border-radius: 32px;
     transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
 }
-.res_7{
+
+.res_7 {
     position: absolute;
     width: 116.44px;
     height: 116.44px;
@@ -83,7 +100,8 @@
     border-radius: 16px;
     transform: matrix(-0.67, 0.74, 0.74, 0.67, 0, 0);
 }
-.res_8{
+
+.res_8 {
     position: absolute;
     width: 293.5px;
     height: 293.5px;
@@ -93,7 +111,8 @@
     border-radius: 32px;
     transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
 }
-.btn{
+
+.btn {
     width: 212px;
     height: 56px;
     box-sizing: border-box;
