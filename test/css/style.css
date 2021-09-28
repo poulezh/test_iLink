@@ -589,6 +589,10 @@ h6 {
   background-color: #fff;
 }
 
+.hide {
+  display: none;
+}
+
 @media screen and (min-width: 664px) {
   .header {
     font-size: 16px;
