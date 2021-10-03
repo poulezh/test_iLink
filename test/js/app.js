@@ -100,38 +100,30 @@ function slider() {
     for (let i = 0; i < dots.length; i++) {
       dots[i];
       dots[i].addEventListener('click', (e) =>{
-        if(i == 0){
-          prev_slide()
-          dots[0].classList.add('active')
-          dots[1].classList.remove('active')
-          dots[2].classList.remove('active')
+        // console.log(dots[i].getBoundingClientRect());
+        let rect = dots[i].getBoundingClientRect()
+        let x = rect.left
+        let w = rect.width;
+        if (x < (window.innerWidth/2) - w)
+        {
+          dots[i].classList.add('active')
+          prev_slide();
         }
-        if(i == 2){
-          next_slide()
-          dots[2].classList.add('active')
-          dots[1].classList.remove('active')
-          dots[0].classList.remove('active')
+        if (x > (window.innerWidth/2)+ w)
+        {
+          dots[i].classList.add('active')
+          next_slide();
         }
-        if(i == 1){
-          count = slider_img.length - 1;
-          dots[2].classList.remove('active')
-          dots[1].classList.add('active')
-          dots[0].classList.remove('active')
+        if (x  === window.innerWidth/2){
+          console.log(window.innerWidth/2);
+          count +=1
         }
-
       })
-
-
-    // if (dots[i].getBoundingClientRect() < 526.5){
-    //   console.log(dots[i].getBoundingClientRect());
-    // }
-    // if (dots[i].getBoundingClientRect() > slider.offsetWidth/2){
-    //   console.log(dots[i].getBoundingClientRect());
-    // }
     }
   }
   dots_handler()
 
+  // slide_interval = setInterval(next_slide,4000);
   slider_inner.addEventListener("click", clicker);
   btn_right.addEventListener("click", prev_slide);
   btn_left.addEventListener("click", next_slide);
