@@ -20,10 +20,16 @@
     }
 
     &__photo {
-        margin-left: 64px;
+        margin-left: 32px;
+        margin-top: 62px;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 35px;
     }
 
     &__block {
+        max-width: 700px;
         width: 100%;
         padding: 44px 34px;
     }
